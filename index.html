@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio website - Cecilia Munayani Banda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="header">
+   </div class= "container">
+         <nav>
+            <img src="images/logo.png.jpg" class="logo" />
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">skills</a></li>
+                <li><a href="#">portfolio</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+         </nav>
+         <div class="header-text">
+            <p>Upcoming Full Stack developer</p>
+            <h1>Hi, I'm <span></span>Ceciia</span><br>Munayani<br>Banda from Zambia</h1>
+         </div>
+    </div>
+</div>
+<!-- --------about--------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                 <img src="images/About.png.jpeg">
+            </div>     
+            <div class="about-col-2">
+                 <h1 class="sub-title"> About me</h1>
+                 <p>Experienced programmer and creative writer with a strong work ethic and organizational skills seeking a web
+                    development career, with a healthcare technology-focused mission. Proven history of delivering high-quality work under pressure and skilled in communication and networking for optimal team performance.</p>
+                 <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links " onclick="opentab('Experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('Education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="Skills">
+                    <ul>
+                        <li><span>Creative Writer</span><br>NGO Newsletter writer<br>Writing short stories on Inkitt<br>ALU Wellness blog post</li>
+                        <li><span>Web development</span><br>Creating websites using HTML<br>CSS<br>Javascript</li>
+                        <li><span>Leadership</span><br>Mentoring high school pupils<br>ALU Think Tank Leader<br>High school vice Headgirl</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Expereince">
+                    <ul>
+                        <li><span>November 2021 - January 2022<br>Clinical Officer General Trainee</span><br>Distributed medicine to patients<br>Recorded patients' vital signs<br>Assisted the midwives in the maternity ward<br>Gained extensive knowledge in data entry, analysis, and reporting</li>
+                        <li><span>November 2018- February 2019<br> Book World Zambia Sales Intern</span><br>Provided product and technical support to customers<br>Checked out items at the point of sale<br>Monitored competitor activities and pricing strategies to compare performance<br>Organized books and store products
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="Education">
+                    <ul>
+                        <li><span>January 2022 - Current<br>African Leadership University(ALU)</span><br>BSc.(Hons)Software Engineering- Specialization in Health<br>Dolika Banda Scholarship Recipient<br>Relevant Coursework: HTML/CSS, Python, Javascript
+                        </li>
+                        <li><span>August 2019 - June 2020<br> African Science Academy(ASA)</span><br>Certificate in AS level<br>Statistics, Physics, Mechanics, Further Mathematics, and Introduction to Programming<br>Scholarship Recipient</li>
+                        <li><span>January 2014 - November 2018<br> Chalo Trust School(CTS)</span><br>High School Diploma<br>Kucetekela Foundation Scholarship Recipient</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tablinks = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname);
+    }
+
+</script>
+
+</body>
+</html>
